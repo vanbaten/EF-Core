@@ -13,6 +13,7 @@ namespace EFGetStarted.Data
         public BloggingContext()
         {
             // Connection strings **SHOULD NOT** be stored in the code for production applications.
+            // in this cas: C:\Users\<user>\AppData\Local\blogging.db
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
             DbPath = Path.Join(path, "blogging.db");
